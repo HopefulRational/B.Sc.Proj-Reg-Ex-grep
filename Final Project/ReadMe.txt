@@ -1,0 +1,31 @@
+/*
+*
+* This lets you experiment with Regular Expressions as
+  implemented by the grep command.  In this :
+.       Matches any single character
+[list]  Matches a single character contained in the brackets.
+        Ranges using "-" are supported; "-" is a literal if first or last.
+        Negate by beginning with ^ inside [ ].
+^       Matches the starting position.  MUST USE if want to match whole string.
+$       Matches the ending position.  MUST USE if want to match whole string.
+\       Escape character; a following metacharacter loses its meaning.
+        Use \\ for backslash itself.
+\(...\)   Subexpression; treat the entire expression as one expression.
+\|       Alternative.  "cat|dog" matches either "cat" or "dog".
+*       Matches the preceding element zero or more times.
++       Matches the preceding element one or more times.
+?       Matches the preceding element zero or one times ("optional")
+\{m,\n}   Matches the preceding element at least m and not more than n times.
+
+*   Some sample regular expressions you might try:
+*   Variable name for many programming languages:
+*  ^[_A-Za-z][_A-Za-z0-9]*$
+*  Decimal Numbers
+*  ^[0-9]\(\.[0-9]*\)\([Ee][0-9]+\)$
+*  Lastname, Firstname[additional names]
+* ^[A-Za-z'!],\( [A-Za-z'!]+\)+$
+*  Course Number:
+* ^[A-Z] [0-9]$
+* ^[A-Z]\{1,4\} [1-9][0-9]\{0,3\}$
+*
+*/

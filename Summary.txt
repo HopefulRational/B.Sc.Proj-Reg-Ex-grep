@@ -1,0 +1,42 @@
+                                            AUM SRI SAI RAM
+...........................................................................................................................
+
+Summary of Regular Expression Project :
+We started this project with command line parsing.
+We then spent time in reading and implementing syntaxes in grep command.
+We kept including them in functions.c file.
+Next, we started reading regular expressions in detail.
+Ankit, then started with array inplementation(processing RegEx on a line as an array) while
+Mahatma continued syntax checking(since a lot of cases were there). 
+Ankit, then found that there were difficulties in handling '*' specially for groups and classes.
+So, we both started with linked lists(taking RegEx as a linked list).
+After spending a lot of time(with various implementations), senior brothers told us to implement
+RegEx as state machines. We, then implemented tree data structure(wherein each node is one state 
+holding data(char and other things) and a pointer to the next state).
+We had to read about state machines for this.
+So in this project, two completely new things for us were Regular Expressions and state machines. 
+..........................................................................................................................
+
+Limitations:
+1) This c-code cannot handle multiple use of '*' , '\{...\}' simultaneously.
+2) Files should not have very long lines(>100 chars).
+3) A combination of greedy and non-greedy matches(for best and fastest match) is not implemented.
+4) Some features of grep like '?', anchors,'-' and groups are also not implemented.Also, '*' and '+' not implemented as character.
+   (so please don't give regex. of kind '*' , '+').  
+...........................................................................................................................
+
+Future Work:
+1) Implementation of greedy and non-greedy matches.
+2) A complete implementation of grep command.    
+............................................................................................................................
+
+
+Acknowledgement:
+We firstly, thank Swami without whose grace nothing wuold have been possible.
+We then thank the computer centre for providing us with necesary resources.
+We also thank Shrawan brother for his necessary guidance. 
+We then thank our teacher Darshan sir and all the senior brohers who spent their valuable 
+time for us.
+At last(but not the least), we thank our classmates who gave necessary feedbacks for the 
+project.
+...........................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx............................................................

@@ -1,0 +1,13 @@
+./main '[]' try
+./main try
+./main 'abc'
+./main 'abc' try
+./main -n '[abc]' try
+./main -w '[abc]' try
+./main -c '[abc]' try
+./main -l '[abc]' try
+./main -v '[abc]' try
+./main -n 'ab*c' try
+./main -n 'ab+c' try
+./main -n 'ab*bc' try
+./main -n 'ab+bc' try
